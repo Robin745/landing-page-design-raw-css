@@ -179,7 +179,10 @@ footer .fab{
     
 }
 
-@media (max-width: 767px) { 
+
+
+
+@media screen and (max-width: 900px) and (min-width: 668px) { 
     /* upper section responsive */
     /* .upper-section{
         flex-direction: column;
