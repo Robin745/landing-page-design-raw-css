@@ -1,6 +1,7 @@
 /* importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
 
+/* common styles */
 body{
     font-family: 'Poppins', sans-serif;
     background: #FFFFFF;
@@ -64,15 +65,19 @@ nav{
 @media (max-width:688px) { 
     .upper-section{
         flex-direction: column;
-        margin: 20px;
+        margin:0 20px;
     }
     .photo{
         order:1;
     }
-    .section-article, .photo img{
-        width: 100%;
-    }
     .section-article{
         order:2;
     }
+    .section-article{
+        width:100%;
+    }
+    .photo img{
+        max-width: 350px;
+    }
+    
 }
