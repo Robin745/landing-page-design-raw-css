@@ -69,7 +69,7 @@ nav{
     .photo{
         order:1;
     }
-    .photo img:last-child{
+    .section-article, .photo img{
         width: 100%;
     }
     .section-article{
