@@ -1,0 +1,78 @@
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+/* header styling */
+nav{
+    background-color: wheat;
+    margin: 0;
+    padding: 0;
+}
+.nav-header{
+    font-weight: 600;
+    margin-left: 30px;
+    
+}
+/* main part styles */
+
+/* upper-section  */
+.upper-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+.section-article{
+    width: 420px;
+}
+.section-header{
+    font-size: 42px;
+    margin-top: 0;
+}
+.first-button{
+    background-color: #1B98F5;
+    width: 140px;
+    color:white ;
+    font-size: 16px;
+    padding:10px 24px;
+    border-radius: 20px;
+}
+.first-button .fas{
+    float: right;
+    padding: 5px;
+}
+
+.photo img:first-child{
+    position: absolute;
+    width: 420px;
+    height: 404px;
+}
+.photo img:last-child{
+    position: relative;
+    width: 420px;
+    height: 404px;
+}
+
+
+/* --------------------
+    responsive this styles 
+-----------------------*/
+@media (max-width:688px) { 
+    .upper-section{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .photo{
+        order:1;
+    }
+    .photo img:last-child{
+        width: 100%;
+    }
+    .section-article{
+        order:2;
+    }
+}
