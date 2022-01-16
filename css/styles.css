@@ -102,6 +102,26 @@ h4{
     align-items: center;
 }
 
+/* -----------------
+    last extra part styling  
+    --------------------*/
+.three-part{
+	margin:40px;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+}
+.three-part p{
+	float:left;
+	text-align:center;
+	color:grey;
+	border-right:1px solid olive;
+}
+.three-part i{
+	margin:0 5px;
+	font-size:20px;
+}
+
+
 /* --------------------------
     Footer stylling start
 ---------------------------- */
@@ -148,7 +168,39 @@ footer .fab{
         grid-template-columns: 1fr;
         justify-content: center;
     }
-
+    .three-part{
+        grid-template-columns: 1fr;
+    }
+    .three-part p{
+        float:none;
+        text-align:center;
+        border:none;
+    }
     
 }
 
+@media (max-width: 767px) { 
+    /* upper section responsive */
+    /* .upper-section{
+        flex-direction: column;
+        margin:0 20px;
+    } */
+    /* .photo{
+        order:1;
+    }
+    .section-article{
+        order:2;
+    } */
+    .section-article{
+        width:100%;
+    }
+    .photo img{
+        max-width: 350px;
+    }
+
+    /* .middle-section */
+    .products{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+}
